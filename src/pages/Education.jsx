@@ -5,8 +5,8 @@ const Education = () => {
   const education = {
     degree: 'Bachelor of Engineering',
     field: 'Computer Science and Engineering',
-    institution: 'Gujarat Technological University',
-    semester: '3rd Semester',
+    institution: 'Sal Institute of Technology and Engineering, Ahmedabad',
+    semester: '6th Semester',
     duration: '2023 - 2027 (Expected)',
     icon: '🎓'
   };
@@ -42,7 +42,7 @@ const Education = () => {
     'Computer Networks',
     'Operating Systems',
     'Software Engineering',
-    'Machine Learning Fundamentals'
+    'Artificial Intelligence',
   ];
 
   return (

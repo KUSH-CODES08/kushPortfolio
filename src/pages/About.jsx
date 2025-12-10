@@ -10,7 +10,7 @@ const About = () => {
         </svg>
       ),
       title: 'Student',
-      description: 'B.E CSE (3rd Semester)',
+      description: 'B.E CSE (6th Semester)',
       detail: 'Gujarat Technological University'
     },
     {
@@ -64,7 +64,7 @@ const About = () => {
                 <p>
                   I'm a passionate <span className="text-blue-600 dark:text-purple-400 font-semibold">Python Developer</span> currently 
                   pursuing my Bachelor of Engineering in Computer Science and Engineering at Gujarat Technological University. 
-                  I'm in my 3rd semester and deeply fascinated by the world of technology.
+                  I'm in my 6th semester and deeply fascinated by the world of technology.
                 </p>
                 <p>
                   My journey in programming started with Python, and since then, I've been exploring various aspects of 
@@ -117,7 +117,7 @@ const About = () => {
           {[
             { number: '6+', label: 'Projects Completed' },
             { number: '10+', label: 'Technologies' },
-            { number: '3rd', label: 'Semester' },
+            { number: '6th', label: 'Semester' },
             { number: '100%', label: 'Dedication' }
           ].map((stat, index) => (
             <Card key={index} className="p-6 text-center">
