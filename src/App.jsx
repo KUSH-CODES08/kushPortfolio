@@ -1,21 +1,25 @@
-import { useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Hero from './pages/Hero';
-import About from './pages/About';
-import Skills from './pages/Skills';
-import Projects from './pages/Projects';
-import Education from './pages/Education';
-import Contact from './pages/Contact';
+import { useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Education from "./pages/Education";
+import Contact from "./pages/Contact";
+import { CustomCursor } from "./components/CustomCursor";
+import { AdvancedFloatingParticles } from "./components/AdvancedFloatingParticles";
 
 function App() {
   useEffect(() => {
     // Smooth scroll behavior
-    document.documentElement.style.scrollBehavior = 'smooth';
+    document.documentElement.style.scrollBehavior = "smooth";
   }, []);
-
+  
   return (
     <div className="min-h-screen">
+      <AdvancedFloatingParticles />
+      <CustomCursor />
       <Navbar />
       <main>
         <Hero />
@@ -26,6 +30,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      
     </div>
   );
 }

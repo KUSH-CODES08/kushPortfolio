@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* GLOBAL Z-INDEX CONTRACT */
+:root {
+  --z-bg: 0;
+  --z-particles: 2;
+  --z-content: 10;
+  --z-cursor: 50;
+}
+/* REMOVE DEFAULT CURSOR */
+html, body, * {
+  cursor: none;
+}
+
 @layer base {
   body {
     @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
@@ -67,4 +80,36 @@
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-blue-600 dark:bg-purple-700;
+}
+
+/* ===== FINAL FLOATING PARTICLES STYLE ===== */
+
+.particle {
+  background: radial-gradient(
+    circle,
+    rgba(180, 160, 255, 0.95),
+    rgba(120, 100, 255, 0.7),
+    transparent 70%
+  );
+  box-shadow:
+    0 0 14px rgba(160, 140, 255, 0.45),
+    0 0 28px rgba(120, 100, 255, 0.25);
+  border-radius: 50%;
+}
+
+/* vertical motion */
+@keyframes float-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-140vh);
+  }
+}
+
+/* horizontal drift */
+@keyframes sway {
+  0%   { transform: translateX(-12px); }
+  50%  { transform: translateX(12px); }
+  100% { transform: translateX(-12px); }
 }
