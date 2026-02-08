@@ -55,25 +55,24 @@ const Projects = () => {
       ],
       icon: '🛡️',
       gradient: 'from-red-400 to-pink-500',
-      githubLink: 'https://github.com/KUSH-CODES08/BSAI',
+      githubLink: 'https://github.com/KUSH-CODES08',
       demoLink: '#'
     },
     {
-      title: 'JARVIS AI – Virtual Assistant',
-      description: 'Python-based virtual AI assistant inspired by CodeWithHarry that performs tasks using voice commands, automation, and text-to-speech.',
-      tech: ['Python', 'SpeechRecognition', 'pyttsx3', 'Automation'],
-      features: [
-        'Voice command recognition',
-        'Text-to-speech responses',
-        'Open websites & applications',
-        'Time and system commands'
-      ],
-      icon: '🤖',
-      gradient: 'from-indigo-400 to-purple-600',
-      githubLink: 'https://github.com/KUSH-CODES08/JARVIS-AI',
-      demoLink: null 
-      }
-,
+    title: 'JARVIS AI | Virtual Assistant',
+    description: 'Python-based virtual AI assistant inspired by CodeWithHarry that performs tasks using voice commands, automation, and text-to-speech.',
+    tech: ['Python', 'SpeechRecognition', 'pyttsx3', 'Automation'],
+    features: [
+      'Voice command recognition',
+      'Text-to-speech responses',
+      'Open websites & applications',
+      'Time and system commands'
+    ],
+    icon: '🤖',
+    gradient: 'from-indigo-400 to-purple-600',
+    githubLink: 'https://github.com/KUSH-CODES08/JARVIS-AI',
+    demoLink: null
+  },
     {
       title: 'Unemployment Data Analyzer',
       description: 'Data analysis tool that processes and visualizes unemployment statistics with interactive charts and detailed insights.',
@@ -101,7 +100,7 @@ const Projects = () => {
       ],
       icon: '🎨',
       gradient: 'from-indigo-400 to-purple-500',
-      githubLink: 'https://github.com/KUSH-CODES08/kushPortfolio',
+      githubLink: 'https://github.com/KUSH-CODES08',
       demoLink: 'https://kush-portfolio-site.vercel.app/'
     }
   ];
