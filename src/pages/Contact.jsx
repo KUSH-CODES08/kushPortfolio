@@ -21,14 +21,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the data to a backend or email service
-    // For now, we'll just show a success message
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', message: '' });
-    }, 3000);
+
+    const gmailURL =
+      `https://mail.google.com/mail/?view=cm&fs=1` +
+      `&to=bhavsarkush78@gmail.com` +
+      `&su=Contact from ${encodeURIComponent(formData.name)}` +
+      `&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+
+    window.open(gmailURL, '_blank');
   };
+
+
 
   const contactInfo = [
     {
