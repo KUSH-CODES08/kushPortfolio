@@ -21,13 +21,15 @@ const Footer = () => {
       ),
     },
     {
-      name: 'Email',
-      href: 'mailto:bhavsarkush78@gmail.com',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
+    name: 'Gmail',
+    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=bhavsarkush78@gmail.com',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      />
+      </svg>
+    ),
     },
   ];
 
@@ -64,26 +66,35 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Links */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              Connect With Me
-            </h3>
-            <div className="flex space-x-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-600 hover:text-white dark:hover:bg-purple-600 transition-all duration-300 transform hover:scale-110"
-                  aria-label={social.name}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
-          </div>
+      {/* Social Links */}
+      <div className="space-y-4">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+          Connect With Me
+        </h3>
+
+        <div className="flex space-x-4">
+          {socialLinks.map((social) => (
+            <a
+              key={social.name}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.name}
+              className={`p-2 bg-gray-100 dark:bg-gray-800 rounded-lg 
+              text-gray-700 dark:text-gray-300 
+              transition-all duration-300 transform hover:scale-110 hover:text-white
+              ${
+                social.name === 'Gmail' || social.name === 'Email'
+                  ? 'hover:bg-red-600'
+                  : 'hover:bg-blue-600 dark:hover:bg-purple-600'
+              }`}
+            >
+              {social.icon}
+            </a>
+          ))}
+        </div>
+      </div>
+
         </div>
 
         {/* Bottom Bar */}
