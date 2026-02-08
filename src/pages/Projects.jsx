@@ -55,24 +55,25 @@ const Projects = () => {
       ],
       icon: '🛡️',
       gradient: 'from-red-400 to-pink-500',
-      githubLink: 'https://github.com/KUSH-CODES08',
+      githubLink: 'https://github.com/KUSH-CODES08/BSAI',
       demoLink: '#'
     },
     {
-      title: 'Iris Flower Classification',
-      description: 'Machine Learning project for classifying Iris flowers using various ML algorithms with an interactive prediction interface.',
-      tech: ['Python', 'scikit-learn', 'Pandas', 'ML'],
+      title: 'JARVIS AI – Virtual Assistant',
+      description: 'Python-based virtual AI assistant inspired by CodeWithHarry that performs tasks using voice commands, automation, and text-to-speech.',
+      tech: ['Python', 'SpeechRecognition', 'pyttsx3', 'Automation'],
       features: [
-        'Multiple ML models',
-        'Dataset visualization',
-        'Prediction interface',
-        'Accuracy metrics'
+        'Voice command recognition',
+        'Text-to-speech responses',
+        'Open websites & applications',
+        'Time and system commands'
       ],
-      icon: '🌸',
-      gradient: 'from-purple-400 to-pink-500',
-      githubLink: 'https://github.com/KUSH-CODES08',
-      demoLink: '#'
-    },
+      icon: '🤖',
+      gradient: 'from-indigo-400 to-purple-600',
+      githubLink: 'https://github.com/KUSH-CODES08/JARVIS-AI',
+      demoLink: null 
+      }
+,
     {
       title: 'Unemployment Data Analyzer',
       description: 'Data analysis tool that processes and visualizes unemployment statistics with interactive charts and detailed insights.',
@@ -100,7 +101,7 @@ const Projects = () => {
       ],
       icon: '🎨',
       gradient: 'from-indigo-400 to-purple-500',
-      githubLink: 'https://github.com/KUSH-CODES08',
+      githubLink: 'https://github.com/KUSH-CODES08/kushPortfolio',
       demoLink: 'https://kush-portfolio-site.vercel.app/'
     }
   ];
