@@ -19,20 +19,29 @@ const Projects = () => {
       githubLink: 'https://github.com/KUSH-CODES08',
       demoLink: '#'
     },
-    {
-      title: 'Python Automation Scripts',
-      description: 'Collection of Python automation scripts for everyday tasks including auto-typing, bulk file operations, and system automation.',
-      tech: ['Python', 'PyAutoGUI', 'OS Module', 'Automation'],
-      features: [
-        'Auto-typing functionality',
-        'Bulk file operations',
-        'System task automation',
-        'Custom workflows'
-      ],
-      icon: '🤖',
-      gradient: 'from-yellow-400 to-orange-500',
-      githubLink: 'https://github.com/KUSH-CODES08',
-      demoLink: '#'
+   {
+    title: 'Solar DC Power Predictor',
+    description: 'A machine learning-based web app that predicts plant-level DC power output using solar irradiation, module temperature, and ambient temperature.',
+    tech: [
+    'Python',
+    'Machine Learning',
+    'Linear Regression',
+    'Streamlit',
+    'Pandas',
+    'NumPy'
+    ],
+    features: [
+    'Predicts DC power output in real-time',
+    'Uses solar irradiation and temperature inputs',
+    'Plant-level power forecasting',
+    'Interactive Streamlit web interface',
+    'Deployed live with public access'
+    ],
+    icon: '☀️',
+    gradient: 'from-sky-500 to-blue-700',
+
+    githubLink: 'https://github.com/KUSH-CODES08/solar-plant-dc-power-predictor',
+    demoLink: 'https://solar-plant-dc-power-predictor-083.streamlit.app/'
     },
     {
       title: 'BugShield AI Code Scanner',
@@ -92,7 +101,7 @@ const Projects = () => {
       icon: '🎨',
       gradient: 'from-indigo-400 to-purple-500',
       githubLink: 'https://github.com/KUSH-CODES08',
-      demoLink: '#'
+      demoLink: 'https://kush-portfolio-site.vercel.app/'
     }
   ];
 
