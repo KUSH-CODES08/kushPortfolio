@@ -1,108 +1,115 @@
-import SectionTitle from '../components/SectionTitle';
-import Card from '../components/Card';
-import Button from '../components/Button';
+import SectionTitle from "../components/SectionTitle";
+import Card from "../components/Card";
+import Button from "../components/Button";
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Real-Time Chat Application',
-      description: 'A full-featured real-time chat application with user authentication, messaging, and online status indicators.',
-      tech: ['Node.js', 'Express', 'MongoDB', 'Socket.io'],
+      title: "Real-Time Chat Application",
+      description:
+        "A full-featured real-time chat application with user authentication, messaging, and online status indicators.",
+      tech: ["Node.js", "Express", "MongoDB", "Socket.io"],
       features: [
-        'Real-time messaging',
-        'User authentication',
-        'Online status',
-        'Message history'
+        "Real-time messaging",
+        "User authentication",
+        "Online status",
+        "Message history",
       ],
-      icon: '💬',
-      gradient: 'from-green-400 to-blue-500',
-      githubLink: 'https://github.com/KUSH-CODES08',
-      demoLink: '#'
+      icon: "💬",
+      gradient: "from-green-400 to-blue-500",
+      githubLink: "https://github.com/KUSH-CODES08/twoway-chat-app",
+      demoLink: "https://twoway-chat-app.onrender.com/",
     },
-   {
-    title: 'Solar DC Power Predictor',
-    description: 'A machine learning-based web app that predicts plant-level DC power output using solar irradiation, module temperature, and ambient temperature.',
-    tech: [
-    'Python',
-    'Machine Learning',
-    'Linear Regression',
-    'Streamlit',
-    'Pandas',
-    'NumPy'
-    ],
-    features: [
-    'Predicts DC power output in real-time',
-    'Uses solar irradiation and temperature inputs',
-    'Plant-level power forecasting',
-    'Interactive Streamlit web interface',
-    'Deployed live with public access'
-    ],
-    icon: '☀️',
-    gradient: 'from-sky-500 to-blue-700',
+    {
+      title: "Solar DC Power Predictor",
+      description:
+        "A machine learning-based web app that predicts plant-level DC power output using solar irradiation, module temperature, and ambient temperature.",
+      tech: [
+        "Python",
+        "Machine Learning",
+        "Linear Regression",
+        "Streamlit",
+        "Pandas",
+        "NumPy",
+      ],
+      features: [
+        "Predicts DC power output in real-time",
+        "Uses solar irradiation and temperature inputs",
+        "Plant-level power forecasting",
+        "Interactive Streamlit web interface",
+        "Deployed live with public access",
+      ],
+      icon: "☀️",
+      gradient: "from-sky-500 to-blue-700",
 
-    githubLink: 'https://github.com/KUSH-CODES08/solar-plant-dc-power-predictor',
-    demoLink: 'https://solar-plant-dc-power-predictor-083.streamlit.app/'
+      githubLink:
+        "https://github.com/KUSH-CODES08/solar-plant-dc-power-predictor",
+      demoLink: "https://solar-plant-dc-power-predictor-083.streamlit.app/",
     },
     {
-      title: 'BugShield AI Code Scanner',
-      description: 'An intelligent code vulnerability scanner that detects security issues and code smells in your projects using pattern matching.',
-      tech: ['React', 'JavaScript', 'Regex', 'Security'],
+      title: "BugShield AI Code Scanner",
+      description:
+        "An intelligent code vulnerability scanner that detects security issues and code smells in your projects using pattern matching.",
+      tech: ["React", "JavaScript", "Regex", "Security"],
       features: [
-        'Vulnerability detection',
-        'Code smell identification',
-        'Security recommendations',
-        'Real-time analysis'
+        "Vulnerability detection",
+        "Code smell identification",
+        "Security recommendations",
+        "Real-time analysis",
       ],
-      icon: '🛡️',
-      gradient: 'from-red-400 to-pink-500',
-      githubLink: 'https://github.com/KUSH-CODES08',
-      demoLink: '#'
+      icon: "🛡️",
+      gradient: "from-red-400 to-pink-500",
+      githubLink: "https://github.com/KUSH-CODES08/BSAI",
+      demoLink: "#",
     },
     {
-    title: 'JARVIS AI | Virtual Assistant',
-    description: 'Python-based virtual AI assistant inspired by CodeWithHarry that performs tasks using voice commands, automation, and text-to-speech.',
-    tech: ['Python', 'SpeechRecognition', 'pyttsx3', 'Automation'],
-    features: [
-      'Voice command recognition',
-      'Text-to-speech responses',
-      'Open websites & applications',
-      'Time and system commands'
-    ],
-    icon: '🤖',
-    gradient: 'from-indigo-400 to-purple-600',
-    githubLink: 'https://github.com/KUSH-CODES08/JARVIS-AI',
-    demoLink: null
-  },
-    {
-      title: 'Unemployment Data Analyzer',
-      description: 'Data analysis tool that processes and visualizes unemployment statistics with interactive charts and detailed insights.',
-      tech: ['Python', 'Matplotlib', 'Pandas', 'Data Viz'],
+      title: "JARVIS AI | Virtual Assistant",
+      description:
+        "Python-based virtual AI assistant inspired by CodeWithHarry that performs tasks using voice commands, automation, and text-to-speech.",
+      tech: ["Python", "SpeechRecognition", "pyttsx3", "Automation"],
       features: [
-        'Data processing',
-        'Interactive charts',
-        'Statistical analysis',
-        'Trend visualization'
+        "Voice command recognition",
+        "Text-to-speech responses",
+        "Open websites & applications",
+        "Time and system commands",
       ],
-      icon: '📊',
-      gradient: 'from-blue-400 to-cyan-500',
-      githubLink: 'https://github.com/KUSH-CODES08',
-      demoLink: '#'
+      icon: "🤖",
+      gradient: "from-indigo-400 to-purple-600",
+      githubLink: "https://github.com/KUSH-CODES08/JARVIS-AI",
+      demoLink: null,
     },
     {
-      title: 'Portfolio Website',
-      description: 'This modern, responsive portfolio website built with React and Tailwind CSS featuring dark mode and smooth animations.',
-      tech: ['React', 'Tailwind CSS', 'JavaScript', 'Vite'],
+      title: "Unemployment Data Analyzer",
+      description:
+        "Data analysis tool that processes and visualizes unemployment statistics with interactive charts and detailed insights.",
+      tech: ["Python", "Matplotlib", "Pandas", "Data Viz"],
       features: [
-        'Responsive design',
-        'Dark/Light mode',
-        'Smooth animations',
-        'Modern UI/UX'
+        "Data processing",
+        "Interactive charts",
+        "Statistical analysis",
+        "Trend visualization",
       ],
-      icon: '🎨',
-      gradient: 'from-indigo-400 to-purple-500',
-      githubLink: 'https://github.com/KUSH-CODES08',
-      demoLink: 'https://kush-portfolio-site.vercel.app/'
-    }
+      icon: "📊",
+      gradient: "from-blue-400 to-cyan-500",
+      githubLink: "https://github.com/KUSH-CODES08",
+      demoLink: "#",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "This modern, responsive portfolio website built with React and Tailwind CSS featuring dark mode and smooth animations.",
+      tech: ["React", "Tailwind CSS", "JavaScript", "Vite"],
+      features: [
+        "Responsive design",
+        "Dark/Light mode",
+        "Smooth animations",
+        "Modern UI/UX",
+      ],
+      icon: "🎨",
+      gradient: "from-indigo-400 to-purple-500",
+      githubLink: "https://github.com/KUSH-CODES08/kushPortfolio",
+      demoLink: "https://kush-portfolio-site.vercel.app/",
+    },
   ];
 
   return (
@@ -115,12 +122,11 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card
-              key={index}
-              className="overflow-hidden group"
-            >
+            <Card key={index} className="overflow-hidden group">
               {/* Project Header with Icon */}
-              <div className={`bg-gradient-to-br ${project.gradient} p-8 text-center transform transition-transform group-hover:scale-105`}>
+              <div
+                className={`bg-gradient-to-br ${project.gradient} p-8 text-center transform transition-transform group-hover:scale-105`}
+              >
                 <div className="text-6xl mb-4">{project.icon}</div>
                 <h3 className="text-2xl font-bold text-white">
                   {project.title}
@@ -201,6 +207,8 @@ const Projects = () => {
                   </a>
                   <a
                     href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all text-center text-sm"
                   >
                     <svg
@@ -233,12 +241,17 @@ const Projects = () => {
             <p className="text-gray-600 dark:text-gray-400 mb-6">
               Check out my GitHub profile for more projects and contributions
             </p>
-            <Button
-              variant="primary"
-              href="https://github.com/KUSH-CODES08"
-            >
-              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+            <Button variant="primary" href="https://github.com/KUSH-CODES08">
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clipRule="evenodd"
+                />
               </svg>
               Visit GitHub Profile
             </Button>
